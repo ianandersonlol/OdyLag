@@ -38,7 +38,7 @@ packets = require('packets')
 spell_list = 0 
 
 windower.register_event('incoming chunk', function(id, original, modified, injected, blocked)
-    if windower.ffxi.get_info().zone == 298 or windower.ffxi.get_info().zone == 279 and id == 0x0AA then 
+    if (windower.ffxi.get_info().zone == 298 or windower.ffxi.get_info().zone == 279) and id == 0x0AA then 
 		spell_list = spell_list + 1
 			if spell_list > 2 then
 				return true

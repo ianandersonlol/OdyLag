@@ -49,3 +49,8 @@ end)
 windower.register_event('zone change', function()
   spell_list = 0 
 end)
+
+windower.register_event('job change', function()
+  spell_list = 0 
+end)
+

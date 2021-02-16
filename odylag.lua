@@ -35,7 +35,7 @@ packets = require('packets')
 spell_list = 0 
 
 windower.register_event('incoming chunk', function(id, original, modified, injected, blocked)
-    if windower.ffxi.get_info().zone == 279 then 
+    if windower.ffxi.get_info().zone == 279 or windower.ffxi.get_info().zone == 294 then 
 		if id == 0x065 then
 			spell_list = 0
 		end
